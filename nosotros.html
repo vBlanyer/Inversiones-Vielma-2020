@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGOTIPO</title>
+    <title>Inversiones Vielma</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 </head>
@@ -15,28 +16,45 @@
         </div>
     </div>
 
-    <div class="barra-navegacion clearfix">
-        <div class="contenedor">
-            <a href="index.html"><img class="logotipo" src="img/LogoTipo.svg" alt="logotipo"></a>
-            <nav class="navegacion-principal">
-                <a href="index.html">Inicio</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="productos.html">Productos</a>
-                <a href="nosotros.html"> Mas de nosotros </a>
-                <a href="contacto.html"> Contactenos </a>
-            </nav>
-        </div>
-    </div>
 
-    <main class="nosotros contenedor seccion">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container text-center">
+            <a class="navbar-brand" href="#"><img src="/img/LogoTipo.svg" style="height: 75px;" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Mas de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contactenos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4 mb-4 nosotros">
         <h1>Sobre nosotros</h1>
         <p>Nosotros <span>Inversiones Vielma 2020</span> somos un empresa dedicada a obras dedicada a obras civil y parte tecnica de telecomunicaciones,
         contamos con todos los equipos necesarios para realizar un trabajo de alta calidad en un tiempo optimo. Cualquier dificultad que tenga debido a 
-    la infraestrutura del lugar la podemos solucionar</p>
+        la infraestrutura del lugar la podemos solucionar</p>
     </main>
 
-    <section class="clientes">
-        <div class="contenedor seccion">
+    <section class="clientes pt-3 pb-3 text-center">
+        <div class="container">
             <h2>Clientes</h2>
             <p>Le hemos trabajado a los siguientes clientes</p>
             <ul>
@@ -54,8 +72,8 @@
         </div>
     </section>
 
-    <section class="equipos">
-        <div class="contenedor seccion">
+    <section class="equipos mt-4 mb-4 text-center">
+        <div class="container">
             <h2>Equipos</h2>
             <ul>
                 <li>Fusionadora Fujikura</li>
@@ -65,18 +83,14 @@
         </div>
     </section>
 
-    <!-- <section class="comentarios">
-        <div class="contenedor seccion">
-            <h2>comentarios</h2>
-        </div>
-    </section> -->
-
-    
-
     <footer class="site-footer">
-        <div class="contenedor-footer contenedor">
+        <div class="container">
             <p class="copyright">&copy; 2020 <span>Inversiones Vielma 2020</span>. Todos los derechos reservados </p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 </html>
