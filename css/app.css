@@ -1,0 +1,333 @@
+:root {
+    --primario: #535c68;
+    --secundario: #ff3838;
+    --terciario: #f0932b;
+}
+
+/* html inherit */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+*, *:before, *:after {
+    box-sizing:  inherit;
+}
+
+/*** Globales ***/
+body {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+}
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    margin: 0;
+}
+h3 {
+    font-size: 18px;
+}
+img {
+    max-width: 100%;
+}
+p {
+    font-size: 20px;
+}
+i {
+    font-size: 30px;
+    margin-right: 8px;
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+span {
+    color: var(--terciario);
+    font-weight: bold;
+}
+.seccion {
+    display: block;
+    padding: 30px 0;
+}
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
+.center {
+    text-align: center;
+}
+.btn {
+    border: 2px solid black;
+    display: inline-block;
+    padding: 8px 15px;
+    align-items: center;
+    margin: 20px;
+    background-color:  #eb2f06;
+    font-weight: bold;
+    color: black;
+}
+.clearfix {
+    overflow: auto;
+}
+.enlaces-redirecionales {
+    color: green;
+}
+
+
+/*** principal page ***/
+/*  hero */
+.logotipo-principal {
+    max-width: 600px;
+}
+.nombre-principal h1 {
+    color: black;
+    margin-top: 0;
+    padding: 20px 0 0;
+    text-align: center;
+}
+.hero {
+    background-image: url(../img/persona-que-muestra-probador-fibra-optica.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 25vh;
+    min-height: 60rem;
+}
+/* barra-navegacion */
+.barra-navegacion {
+    background-color: var(--primario);
+    text-align: center;
+}
+.logotipo {
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+    font-size: 10px;
+    max-width: 250px;
+}
+.navegacion-principal a {
+    display: block;
+    font-size: 24px;
+    padding: 6px 0px;
+    text-transform: uppercase;
+}
+.navegacion-principal a:last-of-type {
+    margin-bottom: 10px;
+}
+.navegacion-principal a:hover {
+    background-color: #ff3838;
+    transition: .3s;
+    color: black;
+}
+@media screen and (min-width: 768px) {
+    .logotipo {
+        float: left;
+        padding: 0 0 0 0;
+        max-width: 150px;
+    }
+    .navegacion-principal {
+        float: right;
+        padding: 10px 0;
+    }
+    .navegacion-principal a {
+        display: inline-block;
+        padding: 6px 6px;
+        margin: 0 16px 0 0 !important;
+    }
+    .navegacion-principal a:last-of-type {
+        margin-right: 0 !important;
+    }
+}
+/* Quienes Somos */
+.lista-especificaciones ul {
+    text-align: left;
+}
+@media screen and (min-width: 768px) {
+    .lista-especificaciones ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+}
+/* Le hemos trabajado */
+.clientes {
+    background-color: rgb(0, 173, 239);
+    border: 2px solid black;
+}
+.lista-clientes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.lista-clientes ul {
+    text-align: left;
+}
+.lista-clientes {
+    overflow: hidden;
+    height: 100px;
+}
+@keyframes scroll {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(calc(-250px))}
+}
+.lista-clientes ul li {
+    margin: auto;
+    margin-top: 18px;
+    animation-name: example;
+    animation: scroll 15s linear infinite;
+    width: 600px;
+}
+@media screen and (min-width: 768px) {
+    .lista-clientes ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+    .lista-clientes {
+        overflow: hidden;
+        height: 100px;
+    }
+    @keyframes scroll {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(calc(-250px))}
+    }
+    .lista-clientes ul li {
+        margin: auto;
+        margin-top: 18px;
+        animation-name: example;
+	    animation: scroll 15s linear infinite;
+        width: 600px;
+    }
+}
+/**** Probando a lo loco  */
+/* .lista-clientes {
+    margin: 20px;
+    overflow: hidden;
+    height: 100px;
+}
+@keyframes scroll {
+	0% { transform: translateY(0); }
+	100% { transform: translateY(calc(-250px))}
+}
+.lista-clientes ul li {
+    margin: auto;
+    animation-name: example;
+    margin-bottom: 20px;
+	animation: scroll 15s linear infinite;
+    width: 600px;
+} */
+/* productos */
+.lista-productos ul {
+    text-align: left;
+}
+@media screen and (min-width: 768px) {
+    .lista-productos ul {
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+}
+/* Footer */
+.site-footer {
+    background-color: var(--primario);
+    box-shadow: 2px 2px 5px black;
+    position: absolute;
+    padding: 10px 0;
+    width: 100%;
+}
+/*** Productos ****/
+.contenedor-especificaciones span {
+    color: green;
+}
+/*** servicios ***/
+.contenido-servicio {
+    padding: 40px;
+}
+.servicios img {
+    width: 100%;
+    height: 400%;
+}
+.servicios ul {
+    text-align: left;
+}
+.obra-civil {
+    background-color: rgb(0, 173, 239);
+}
+@media screen and (min-width: 768px) {
+    .fibra-optica img {
+        height: 500px;
+        width: 50%;
+        float: left;
+    }
+    .contenido-acometida {
+        float: right;
+        width: 50%;
+        height: 500px;
+        padding: 16px;
+    }
+    .obra-civil img {
+        width: 50%;
+        height: 500px;
+        float: right;
+    }
+    .contenido-obra-civil {
+        background-color: rgb(0, 173, 239);
+        float: left;
+        width: 50%;
+        height: 500px;
+        padding: 16px;
+    
+    }
+    .desarrollo-web img {
+        height: 500px;
+        width: 50%;
+        float: left;
+    }
+    .contenido-desarrollo-web {
+        
+        float: right;
+        width: 50%;
+        height: 500px;
+        padding: 16px;
+    }
+}
+
+/* Productos */
+.contenedor {
+    width: 90%;
+}
+.contenedor-items {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.item {
+    width: 100%;
+    border: .1rem solid #b5b5b5;
+    /* background-color: #F5F5F5; */
+    margin-bottom: 2rem;
+}
+.item img {
+    width: 100%;
+    height: 250px;
+}
+.item:hover {
+    box-shadow: 2px 2px 5px black;
+}
+.contenedor-especificaciones {
+    padding: 2rem;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+    .contenedor-items {
+        flex-direction: row;
+    }
+    .item {
+        width: 250px;
+    }
+}
+/*** Contacto ***/
+.contacto ul {
+    list-style: none;
+}
