@@ -3,6 +3,10 @@
     --secundario: #ff3838;
     --terciario: #f0932b;
 }
+span a {
+    text-decoration: none;
+    color: var(--terciario);
+}
 img {
     width: 100%;
 }
@@ -39,4 +43,37 @@ span {
 }
 .contenido-obra-civil {
     background-color: rgb(0, 173, 239);
+}
+.productos img {
+    height: 250px;
+}
+/** Productos **/ /*acomodar un poco, simplificar*/
+.contenedor-items {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.card {
+    width: 100%;
+    border: .1rem solid #b5b5b5;
+    /* background-color: #F5F5F5; */
+    margin-bottom: 2rem;
+}
+.card img {
+    height: 250px;
+}
+.card:hover {
+    box-shadow: 2px 2px 5px black;
+}
+.card-body {
+    text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+    .contenedor-items {
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
