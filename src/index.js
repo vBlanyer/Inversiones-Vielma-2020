@@ -12,24 +12,7 @@ app.set('view engine', 'ejs');
 
 
 //Routes
-app.get('/', (req, res) => {
-    res.render('index');
-});
-app.get('/index.html', (req, res) => {
-    res.render('index');
-});
-app.get('/servicios.html', (req, res) => {
-    res.render('servicios');
-});
-app.get('/productos.html', (req, res) => {
-    res.render('productos');
-});
-app.get('/nosotros.html', (req, res) => {
-    res.render('nosotros');
-});
-app.get('/contacto.html', (req, res) => {
-    res.render('contacto');
-});
+app.use(require('./routes/index'));
 
 //Static Files
 app.use(express.static(path.join(__dirname, 'public')));
