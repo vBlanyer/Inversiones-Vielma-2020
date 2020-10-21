@@ -1,11 +1,11 @@
 :root {
-    --primario: #535c68;
-    --secundario: #ff3838;
+    --primario:rgb(52, 58, 64);
+    --secundario: #17a2b8;
     --terciario: #f0932b;
 }
 span a {
     text-decoration: none;
-    color: var(--terciario);
+    color: var(--secundario);
 }
 img {
     width: 100%;
@@ -16,7 +16,7 @@ ul {
     text-align: center;
 }
 span {
-    color: var(--terciario);
+    color: var(--secundario);
 }
 .hero {
     background-image: url(../img/persona-que-muestra-probador-fibra-optica.jpg);
@@ -28,6 +28,18 @@ span {
 .logotipo-principal {
     max-width: 600px;
 }
+.navbar-inversiones li > a {
+    color: var(--secundario) !important;
+    /* border: solid 1px #17a2b8;
+    border-radius: .25rem;
+    padding: 6px 12px;
+    margin-right: 8px; */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.navbar-inversiones li > a:hover {
+    color: white !important;
+    background-color: var(--secundario);
+}
 .clientes {
     background-color: rgb(0, 173, 239);
 }
@@ -37,6 +49,7 @@ span {
     position: absolute;
     padding: 10px 0;
     width: 100%;
+    color: white;
 }
 .servicios img {
     height: 450px;

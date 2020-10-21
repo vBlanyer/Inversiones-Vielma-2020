@@ -8,17 +8,21 @@
 <body>
     <%- include ('partials/header.ejs')%>
 
-    <main class="container mb-4">
+    <main class="container mt-4 mb-4">
         <h1>Contacto</h1>
-        <p><i class="fas fa-map-marker-alt"></i> San bernardino, ....</p>
-        <p></p><i class="far fa-envelope"></i> investments.vielma@gmail.com</p>
-        <p>Numeros de telefono:
-            <ul>
-                <li><i class="fab fa-whatsapp" style="color: green;"></i> 58+ 04167284021</li>
-                <li><i class="fas fa-phone-square-alt"></i></i> 58+ 04129906491</li>
+        <p>Direccion: <br><i class="fas fa-map-marker-alt"></i> AV FRANCISCO JAVIER UZTARIS LOCAL  NRO 1 SECTOR SANBERNARDINO CARACAS DISTRITO CAPITAL ZONA POSTAL 1010</p>
+        <p>Correo electronico:<br><i class="far fa-envelope"></i> invers.vielma2020@gmail.com</p>
+        <div>Numeros de telefono:
+            <ul class="text-left">
+                <li><i class="fab fa-whatsapp" style="color: green;"></i> 58+ 0416-7284021</li>
+                <li><i class="fas fa-phone-square-alt"></i></i> 58+ 0412-9906491</li>
             </ul>
-        </p>
-        <p>Redes sociales <i class="fab fa-facebook"></i></p>
+        </div>
+        <div>Redes sociales:
+            <ul class="text-left">
+                <li><i class="fab fa-facebook"></i> Inversiones Vielma 2020</li>
+            </ul>
+        </div>
 
         <form action="/submit" method="POST">
             <div class="form-row align-items-center">

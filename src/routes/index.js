@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-var Form = require('../form.js');
-const { find, create } = require('../form');
+var Form = require('../model/form.js');
+const { find, create } = require('../model/form');
 
 router.get('/', (req, res) => {
     res.render('index');
