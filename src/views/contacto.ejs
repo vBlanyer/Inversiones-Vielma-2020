@@ -19,20 +19,21 @@
             </ul>
         </p>
         <p>Redes sociales <i class="fab fa-facebook"></i></p>
-        <form>
+
+        <form action="/submit" method="POST">
             <div class="form-row align-items-center">
                 <div class="col-auto">
                   <label for="inlineFormInput">Nombre</label>
-                  <input type="text" class="form-control mb-3" id="inlineFormInput" placeholder="Jane Doe">
+                  <input type="text" class="form-control mb-3" name="name" placeholder="Jane Doe">
                 </div>
                 <div class="col-auto">
                     <label for="exampleFormControlInput1">Correo</label>
-                    <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="email" class="form-control mb-3" name="mail" placeholder="name@example.com">
                 </div>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Comentario</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" name="comment" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
