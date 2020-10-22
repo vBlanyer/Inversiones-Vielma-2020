@@ -52,11 +52,17 @@ span {
     color: white;
 }
 .servicios img {
-    height: 450px;
+    height: 300px;
+    width: 100%;
 }
-.contenido-obra-civil {
+@media (min-width: 768px) {
+    .servicios img {
+        height: 450px;
+    }
+}
+/* .contenido-obra-civil {
     background-color: rgb(0, 173, 239);
-}
+} */
 .productos img {
     height: 250px;
 }
