@@ -19,7 +19,7 @@ span {
     color: var(--secundario);
 }
 .hero {
-    background-image: url(../img/persona-que-muestra-probador-fibra-optica.jpg);
+    background-image: url(https://i.ibb.co/26j4KSV/persona-que-muestra-probador-fibra-optica.jpg);
     background-position: center center;
     background-size: cover;
     height: 25vh;
