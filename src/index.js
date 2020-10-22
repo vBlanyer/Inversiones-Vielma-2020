@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 const app = express();
 
 // connection to db
-mongoose.connect('mongodb://localhost/inversionesVielma')
+mongoose.connect('mongodb+srv://blanyer:575217@cluster0.lduze.mongodb.net/<dbname>?retryWrites=true&w=majority')
   .then(db => console.log('db connected'))
   .catch(err => console.log(err));
 
