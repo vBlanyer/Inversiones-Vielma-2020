@@ -2,13 +2,16 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path'); //directorios linux o windows /\
 var mongoose = require('mongoose');
+require('dotenv').config();
 
 const app = express();
 
 // connection to db
-mongoose.connect('mongodb+srv://blanyer:575217@cluster0.lduze.mongodb.net/<dbname>?retryWrites=true&w=majority')
-  .then(db => console.log('db connected'))
-  .catch(err => console.log(err));
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true
+}) 
+  .then(db => console.log(`DB is connected`))
+  .catch(err => console.error(err));
 
 //Settings
 app.set('port', process.env.PORT || 3000);
