@@ -7,9 +7,7 @@ require('dotenv').config();
 const app = express();
 
 // connection to db
-mongoose.connect(process.env.MONGODB_URI, {
-  useNewUrlParser: true
-}) 
+mongoose.connect('mongodb+srv://blanyer:575217@cluster0.lduze.mongodb.net/<dbname>?retryWrites=true&w=majority') 
   .then(db => console.log(`DB is connected`))
   .catch(err => console.error(err));
 
