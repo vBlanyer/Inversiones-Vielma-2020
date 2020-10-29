@@ -7,19 +7,19 @@ const { find, create } = require('../model/form');
 router.get('/', (req, res) => {
     res.render('index');
 });
-router.get('/index.html', (req, res) => {
+router.get('/index', (req, res) => {
     res.render('index');
 });
-router.get('/servicios.html', (req, res) => {
+router.get('/servicios', (req, res) => {
     res.render('servicios');
 });
-router.get('/productos.html', (req, res) => {
+router.get('/productos', (req, res) => {
     res.render('productos');
 });
-router.get('/nosotros.html', (req, res) => {
+router.get('/nosotros', (req, res) => {
     res.render('nosotros');
 });
-router.get('/contacto.html', (req, res) => {
+router.get('/contacto', (req, res) => {
     res.render('contacto');
 });
 router.post('/submit', async (req, res, next) => {
