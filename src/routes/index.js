@@ -13,9 +13,9 @@ router.get('/index.html', (req, res) => {
 router.get('/servicios.html', (req, res) => {
     res.render('servicios');
 });
-// router.get('/productos.html', (req, res) => {
-//     res.render('productos');
-// });
+router.get('/productos.html', (req, res) => {
+    res.render('productos');
+});
 router.get('/nosotros.html', (req, res) => {
     res.render('nosotros');
 });
