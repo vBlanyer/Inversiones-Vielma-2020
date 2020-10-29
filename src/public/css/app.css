@@ -1,11 +1,15 @@
 :root {
-    --primario:rgb(52, 58, 64);
+    --primario: #343a40;
     --secundario: #17a2b8;
-    --terciario: #f0932b;
+    --terciario: #00adef;
+    /* --terciario: #f0932b; */
 }
 span a {
     text-decoration: none;
     color: var(--secundario);
+}
+.enlaces-redirecionales:hover {
+    color: #137a8a;
 }
 img {
     width: 100%;
@@ -17,13 +21,18 @@ ul {
 }
 span {
     color: var(--secundario);
+    font-weight: bold;
 }
 .hero {
     background-image: url(https://i.ibb.co/26j4KSV/persona-que-muestra-probador-fibra-optica.jpg);
     background-position: center center;
     background-size: cover;
-    height: 25vh;
-    min-height: 70vh;
+    min-height: 55vh;
+}
+@media (min-width: 768px) {
+    .hero {
+        min-height: 70vh;
+    }
 }
 .logotipo-principal {
     max-width: 600px;
@@ -40,16 +49,19 @@ span {
     color: white !important;
     background-color: var(--secundario);
 }
+.logo-nav {
+    width: 152px;
+}
 .clientes {
-    background-color: rgb(0, 173, 239);
+    background-color: #00adef;
 }
 .site-footer {
     background-color: var(--primario);
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px #000000;
     position: absolute;
     padding: 10px 0;
     width: 100%;
-    color: white;
+    color: #ffffff;
 }
 .servicios img {
     height: 300px;
@@ -60,9 +72,6 @@ span {
         height: 450px;
     }
 }
-/* .contenido-obra-civil {
-    background-color: rgb(0, 173, 239);
-} */
 .productos img {
     height: 250px;
 }
@@ -84,7 +93,7 @@ span {
     height: 250px;
 }
 .card:hover {
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 2px 2px 5px #000000;
 }
 .card-body {
     text-transform: uppercase;
@@ -94,6 +103,9 @@ span {
         justify-content: space-between;
         flex-direction: row;
     }
+}
+.precio {
+    font-size: 20px;
 }
 .row {
     margin: 0 !important;
