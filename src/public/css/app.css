@@ -4,6 +4,9 @@
     --terciario: #00adef;
     /* --terciario: #f0932b; */
 }
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
 span a {
     text-decoration: none;
     color: var(--secundario);
@@ -63,6 +66,7 @@ span {
     width: 100%;
     color: #ffffff;
 }
+/** Servicios **/
 .servicios img {
     height: 300px;
     width: 100%;
